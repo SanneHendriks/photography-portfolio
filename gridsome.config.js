@@ -7,6 +7,5 @@
 module.exports = {
   siteName: 'Gridsome',
   plugins: [],
-  siteUrl: 'https://sannehendriks.github.io',
-  pathPrefix: '/photography-portfolio',
+  siteUrl: 'photos.sannehendriks.net',
 }
