@@ -1,5 +1,5 @@
 {
-  "name": "photographyPortfolio",
+  "name": "photography-portfolio",
   "private": true,
   "scripts": {
     "build": "gridsome build",
@@ -11,5 +11,10 @@
   "dependencies": {
     "gh-pages": "^4.0.0",
     "gridsome": "^0.7.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.25.0",
+    "eslint-plugin-gridsome": "^1.6.2",
+    "vue-eslint-parser": "^9.1.0"
   }
 }
