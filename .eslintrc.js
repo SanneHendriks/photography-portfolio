@@ -1,4 +1,13 @@
 module.exports = {
+    env: {
+        browser: true,
+        es2021: true,
+        node: true,
+    },
+    extends: ["eslint:recommended", "plugin:vue/vue3-essential", "prettier"],
     parser: "vue-eslint-parser",
-    extends: ["plugin:gridsome/recommended"],
+    parserOptions: {
+        sourceType: "module",
+    },
+    plugins: ["vue"],
 };

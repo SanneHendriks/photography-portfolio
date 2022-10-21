@@ -1,20 +1,33 @@
 {
-  "name": "photography-portfolio",
-  "private": true,
-  "scripts": {
-    "build": "gridsome build",
-    "develop": "gridsome develop",
-    "explore": "gridsome explore",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist"
-  },
-  "dependencies": {
-    "gh-pages": "^4.0.0",
-    "gridsome": "^0.7.0"
-  },
-  "devDependencies": {
-    "eslint": "^8.25.0",
-    "eslint-plugin-gridsome": "^1.6.2",
-    "vue-eslint-parser": "^9.1.0"
-  }
+    "name": "photography-portfolio",
+    "private": true,
+    "scripts": {
+        "build": "gridsome build",
+        "develop": "gridsome develop",
+        "explore": "gridsome explore",
+        "predeploy": "npm run build",
+        "deploy": "gh-pages -d dist",
+        "prepare": "husky install",
+        "eslint": "eslint --cache",
+        "prettier": "prettier --ignore-unknown --check \"src/**/*\""
+    },
+    "dependencies": {
+        "gh-pages": "^4.0.0",
+        "gridsome": "^0.7.0"
+    },
+    "devDependencies": {
+        "eslint": "^8.25.0",
+        "eslint-config-prettier": "^8.5.0",
+        "eslint-plugin-gridsome": "^1.6.2",
+        "eslint-plugin-standard": "^5.0.0",
+        "eslint-plugin-vue": "^9.6.0",
+        "husky": ">=6",
+        "lint-staged": ">=10",
+        "prettier": "2.7.1",
+        "vue-eslint-parser": "^9.1.0"
+    },
+    "lint-staged": {
+        "*.js": "eslint --cache --fix",
+        "*.{js,css,md}": "prettier --ignore-unknown --write"
+    }
 }
